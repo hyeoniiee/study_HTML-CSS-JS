@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>textarea 태그</title>
+  </head>
+  <body>
+    <!-- 
+    여러 줄의 입력 요소를 생성할 때 textarea 태그 사용 
+    
+    (형식)<textarea>초깃값</textarea> 
+     textarea 태그는 input 태그와 다르게 닫는 태그가 있어 콘텐츠 영역에 초깃값을 정의한다.
+    -->
+    <form action="#" method="post">
+      <fieldset>
+        <legend>블로그 글쓰기</legend>
+        <p>
+          <label for="title"
+            >제목
+            <input type="text" id="title" name="title" />
+          </label>
+        </p>
+        <p>
+          <label for="desc"
+            >내용
+            <textarea id="desc" name="desc" readonly></textarea>
+          </label>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

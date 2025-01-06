@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input 태그</title>
+  </head>
+  <body>
+    <!-- 
+  (형식) <input type="종류" name="이름" value="초깃값">
+  type - 입력된 값에 따라 상호작용 요소의 종류를 결정한다.
+  name - 입력 요소의 이름을 작성한다. 서버에서는 지정된 이름으로 입력 요소를 식별할 수 있다.
+  value - 입력 요소의 초깃값을 작성한다. 
+  -->
+    <form action="#">
+      <!-- 한 줄 텍스트 입력 -->
+      <input type="text" placeholder="한 줄 텍스트 입력" />
+      <br />
+
+      <!-- 비밀번호 입력 -->
+      <input type="password" placeholder="비밀번호 입력" />
+      <br />
+
+      <!-- 전화번호 형식 -->
+      <input type="tel" placeholder="전화번호 형식" />
+      <br />
+
+      <!-- 숫자만 입력 -->
+      <input type="number" placeholder="숫자만 입력" />
+      <br />
+
+      <!-- URL 주소 형식 입력 -->
+      <input type="url" placeholder="URL 주소 형식 입력" />
+      <br />
+
+      <!-- 검색용 텍스트 입력 -->
+      <input type="search" placeholder="검색용 텍스트 입력" />
+      <br />
+
+      <!-- 이메일 형식 입력 -->
+      <input type="email" placeholder="이메일 형식 입력" />
+      <br />
+
+      <!-- 체크박스 요소 생성 -->
+      <input type="checkbox" />
+      <br />
+
+      <!-- 라디오 버튼 요소 생성 -->
+      <input type="radio" />
+      <br />
+
+      <!-- 파일 업로드 요소 생성  -->
+      <input type="file" />
+      <br />
+
+      <!-- 버튼 요소 생성 -->
+      <input type="button" />
+      <br />
+
+      <!-- 이미지로 버튼 요소 생성 -->
+      <input type="image" src="/images/facebook.png" alt="페이스북 버튼" />
+      <br />
+
+      <!-- 사용자 눈에 보이지 않는 입력 요소 생성 -->
+      <input type="hidden" />
+      <br />
+
+      <!-- 날짜(연, 월, 일)을 선택할 수 있는 입력 요소 생성 -->
+      <input type="date" />
+      <br />
+
+      <!-- 사용자 시간대에 맞는 날짜(연, 월, 일, 시, 분)를 선택할 수 있는 입력 요소 생성 -->
+      <input type="datetime-local" />
+      <br />
+
+      <!-- 날짜 (연, 월) 선택 -->
+      <input type="month" />
+      <br />
+
+      <!-- 날짜 (연, 주차) 선택 -->
+      <input type="week" />
+      <br />
+
+      <!-- 시간 선택 -->
+      <input type="time" />
+      <br />
+
+      <!-- 숫자 범위를 선택할 수 있는 슬라이드 요소 생성 -->
+      <input type="range" />
+      <br />
+
+      <!-- 색상 선택 -->
+      <input type="color" />
+      <br />
+
+      <!-- 폼 전송 역할을 하는 버튼 요소 생성 -->
+      <input type="submit" />
+      <br />
+
+      <!-- 폼 요소에 사용자가 입력한 값을 초기화하는 버튼 요소 생성 -->
+      <input type="reset" />
+      <br />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>disabled 속성</title>
+    <style>
+      input,
+      button {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 상호작용 요소 비 활성화. input, textarea, select, button 태그에 사용 가능 (형식) <태그 disabled> -->
+    <input type="text" disabled />
+    <button type="button" disabled>비활성</button>
+  </body>
+</html>
+<!-- disabled 속성은 form 태그로 서버에 값을 전송할 때 값이 아예 전송되지 않지만 readonly 는 값이 전송된다. -->

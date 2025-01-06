@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fieldset 태그</title>
+  </head>
+  <body>
+    <!-- 
+  fieldset 태그로 그룹을 지으면 그룹별로 박스 모양의 테두리가 생긴다.
+  이렇게 그룹 지은 요소들은 legend 태그로 이름을 붙일 수 있다. 
+
+  (형식)
+  <form>
+    <fieldset>
+      <legend>그룹 이름</legend>
+    </fieldset>
+  </form>
+  -->
+    <form action="#">
+      <fieldset>
+        <legend>기본 정보</legend>
+        <p>
+          <label for="userid">아이디</label>
+          <input type="text" id="userid" />
+        </p>
+        <p>
+          <label for="passwd">비밀번호</label>
+          <input type="password" id="passwd" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>선택 정보</legend>
+        <p>
+          <label for="age">나이</label>
+          <input type="number" id="age" />
+        </p>
+        <p>
+          <label for="recommender">추천인</label>
+          <input type="text" id="recommender" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

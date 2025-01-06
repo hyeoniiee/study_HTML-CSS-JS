@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>readonly 속성</title>
+    <style>
+      input,
+      textarea {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 상호작용 요소를 읽기 전용으로 변경한다. (형식) <태그 readonly> -->
+    <input type="text" readonly />
+    <textarea readonly></textarea>
+  </body>
+</html>
+<!-- disabled 속성은 form 태그로 서버에 값을 전송할 때 값이 아예 전송되지 않지만 readonly 는 값이 전송된다. -->

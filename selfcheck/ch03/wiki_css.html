@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki</title>
+    <style>
+      /* 전체 목록 스타일 초기화 */
+      ol {
+        counter-reset: section;
+        list-style: none;
+        padding-left: 20px;
+      }
+
+      /* 최상위 목록 스타일 */
+      ol > li {
+        counter-increment: section;
+      }
+      ol > li::before {
+        content: counter(section) ". ";
+        font-weight: bold;
+      }
+
+      /* 두 번째 수준 목록 스타일 */
+      ol ol {
+        counter-reset: subsection;
+      }
+      ol ol > li {
+        counter-increment: subsection;
+      }
+      ol ol > li::before {
+        content: counter(section) "." counter(subsection) " ";
+      }
+
+      /* 세 번째 수준 목록 스타일 */
+      ol ol ol {
+        counter-reset: subsubsection;
+      }
+      ol ol ol > li {
+        counter-increment: subsubsection;
+      }
+      ol ol ol > li::before {
+        content: counter(section) "." counter(subsection) "."
+          counter(subsubsection) " ";
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>목차</h1>
+      <ol>
+        <li>
+          <a href="#">역사</a>
+          <ol>
+            <li>
+              <a href="#">개발</a>
+            </li>
+            <li>
+              <a href="#">최초 규격</a>
+            </li>
+            <li>
+              <a href="#">표준 버전의 역사</a>
+              <ol>
+                <li>
+                  <a href="#">HTML 버전 스케줄</a>
+                </li>
+                <li>
+                  <a href="#">HTML 초안 버전 스케줄</a>
+                </li>
+                <li>
+                  <a href="#">XHTML 버전</a>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#">마크업</a>
+          <ol>
+            <li>
+              <a href="#">HTML 요소</a>
+            </li>
+            <li>
+              <a href="#">데이터 형식</a>
+            </li>
+            <li>
+              <a href="#">문서 형식 선언</a>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

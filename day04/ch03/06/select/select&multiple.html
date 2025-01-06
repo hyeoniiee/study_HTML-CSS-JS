@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>select&multiple 태그</title>
+    <style>
+      /* 스타일 정리를 위한 CSS 코드 */
+      label,
+      select {
+        display: block;
+        margin-bottom: 10px;
+      }
+      #city {
+        width: 60px;
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- multiple 속성을 사용하면 여러 항목을 동시에 선택할 수 있다. ctrl / cmd 단축키 사용하여 동시에 선택 할 수 있다. -->
+
+    <!-- select & option 태그만 사용 -->
+    <form action="#" method="post">
+      <fieldset>
+        <legend>개인 정보 입력</legend>
+        <label for="city">지역</label>
+        <select name="city" id="city" multiple>
+          <option value="강북구">강북구</option>
+          <option value="강남구">강남구</option>
+          <option value="서초구">서초구</option>
+          <option value="중원구">중원구</option>
+          <option value="분당구">분당구</option>
+        </select>
+        <input type="submit" value="등록" />
+      </fieldset>
+    </form>
+  </body>
+</html>

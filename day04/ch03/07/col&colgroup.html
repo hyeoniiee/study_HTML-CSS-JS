@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>col, colgroup</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    표에서 열을 그룹화할 때는 col 태그와 colgroup 태그를 사용한다.
+    col 태그는 하나의 열을 그룹화, colgroup 태그는 span 속성과 함께 사용해 2개 이상의 열을 그룹화 한다.
+
+    (형식)
+    <col>
+    <colgroup span="그룹화 할 열의 개수">
+    -->
+    <table>
+      <col style="width: 80px; background-color: #f5e0e0" />
+      <colgroup
+        span="2"
+        style="width: 150px; background-color: #e8fce8"
+      ></colgroup>
+      <col style="width: 100px; background-color: #e8e8fa" />
+      <tr>
+        <th>번호</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>콜라</td>
+        <td>1개</td>
+        <td>1,500원</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>사이다</td>
+        <td>2개</td>
+        <td rowspan="2">1,000원</td>
+        <!--행 병합-->
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>탄산수</td>
+        <td>3개</td>
+        <!-- 4행 4열은 3행 4열과 병합했으므로 생성하지 않습니다. -->
+      </tr>
+      <tr>
+        <td>총 금액</td>
+        <td colspan="3">6,500원</td>
+        <!-- 5행 2열부터 열 3개를 병합했으므로 나머지 열은 생성하지 않습니다. -->
+      </tr>
+    </table>
+  </body>
+</html>

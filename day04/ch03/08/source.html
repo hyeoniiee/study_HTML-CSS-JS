@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>source 태그</title>
+  </head>
+  <body>
+    <!-- source 태그는 audio 태그와 viedo 태그에서 리소스(파일) 경로와 미디어 타입을 명시하는데 사용한다. 
+    
+    (형식)
+    <audio controls>
+      <source src="파일 경로" type="미디어 타입">
+    </audio>
+    <video controls>
+      <source src="파일 경로" type="미디어 타입">
+    </video>
+    -->
+    <audio controls>
+      <source src="sample.wav" type="audio/wav" />
+      <source src="sample.mp3" type="audio/mp3" />
+      지원하지 않는 브라우저입니다.
+    </audio>
+  </body>
+</html>
