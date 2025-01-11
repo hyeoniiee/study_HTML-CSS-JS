@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기본 속성 선택자(attribute selector)</title>
+    <style>
+      /* 
+      기본 속성 선택자
+      HTML 태그에서 사용할 수 있는 속성과 값을 사용해 선택자를 지정하는 방법이다.
+
+      (형식)
+      [속성]{ CSS 코드 }
+      [속성=값]{ CSS 코드 }
+      */
+      a[target="_blank"] {
+        color: red;
+        display: block; /* a 태그를 block-level 요소로 지정 */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#dd">기본 a 태그</a>
+    <a href="#" target="_blank">새 창으로 열리는 a 태그</a>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:focus</title>
+    <style>
+      /* focusInput 스타일 */
+      #focusInput:focus {
+        color: red;
+      }
+
+      /* checkboxInput 스타일 */
+      #checkboxInput:checked + label {
+        color: green; /* 체크 시 라벨 텍스트 초록색 */
+      }
+
+      /* disabledInput 및 disabledButton 스타일 */
+      #disabledInput:disabled,
+      #disabledButton:disabled {
+        color: #888; /* 텍스트 색상 어두운 회색 */
+      }
+
+      /* enabledInput 및 enabledButton 스타일 */
+      #enabledInput:enabled,
+      #enabledButton:enabled {
+        background-color: #888; /* 텍스트 색상 어두운 회색 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- focus -->
+    <p>:focus 입력 요소에 커서가 활성화되면 스타일을 적용한다.</p>
+    <input type="text" id="focusInput" />
+
+    <br />
+    <br />
+    <br />
+
+    <!-- checked -->
+    <p>:checked 체크박스가 표시되어 있으면 스타일을 적용한다.</p>
+    <input type="checkbox" id="checkboxInput" />
+    <label for="checkboxInput">아이디</label>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- disabled -->
+    <p>:disabled 상호작용 요소가 비활성화되어 있으면 스타일을 적용한다.</p>
+    <input type="text" id="disabledInput" disabled />
+    <button id="disabledButton" disabled>버튼</button>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- enabled -->
+    <p>:enabled 상호작용 요소가 활성화되어 있으면 스타일을 적용한다.</p>
+    <input type="text" id="enabledInput" />
+    <button id="enabledButton">버튼</button>
+  </body>
+</html>

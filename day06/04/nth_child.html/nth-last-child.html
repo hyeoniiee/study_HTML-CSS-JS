@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nth-last-child(n)</title>
+    <style>
+      /* 
+      :nth-last-child(n) - E 요소가 부모의 모든 자식 요소 중 마지막에서 n 번째 자식 요소가 맞으면 선택한다.
+
+      아래 코드는 부모 요소에서 끝에서부터 두 번째 자식 요소가 p 태그일 때 선택한다.
+      */
+      p:nth-last-child(2) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 부모인 body 태그의 자식 중 끝에서 두 번째 요소가 아니므로 적용 안됨 -->
+    <p>lorem 0</p>
+    <div>
+      <!-- 부모인 div 태그의 자식 중 끝에서 두 번째 요소가 p 태그이므로 스타일 적용 -->
+      <p>lorem 1</p>
+      <p>lorem 2</p>
+    </div>
+    <div>
+      <!-- 부모인 div 태그의 자식 중 끝에서 두 번째 요소가 p 태그이므로 스타일 적용 -->
+      <p>lorem 3</p>
+      <p>lorem 4</p>
+      <p>lorem 5</p>
+    </div>
+  </body>
+</html>

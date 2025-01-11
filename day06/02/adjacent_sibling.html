@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인접 형제 선택자(adjacent sibling)</title>
+    <style>
+      h1 + h2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>lorem1</h1>
+    <h2>lorem2</h2>
+    <h2>lorem3</h2>
+  </body>
+</html>
+<!-- 
+앞에서 지정한 선택자 요소 바로 다음에 있는 형제 관계 요소를 선택자로 지정한다.
+2개 이상의 선택자를 사용하고, 선택자와 선택자는 + 기호로 구분한다.
+
+(형식) 이전 선택자 + 대상 선택자 { CSS 코드 }
+
+h1 태그와 형제 관계이며 인접한 h2 태그에만 적용
+-->
