@@ -1,4 +1,4 @@
-function getCircleArea(radius){
+function getCircleArea(radius) {
   return radius * radius * 3.14;
 }
 const area = getCircleArea(10);
